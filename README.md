@@ -4,8 +4,8 @@
 ## Team Members:
 * Benjamin Brown - https://github.com/bdb12838
 * Matthew Burt 
-* Jared Eidson - 
-* Harrison Mcclure -
+* Jared Eidson - https://github.com/jke99240
+* Harrison Mcclure - https://github.com/Harrison-mcclure
 * John Overstreet - 
 ## Scenario Description (Why does this data matter?):
 This database models the fighters, events, customers, and employees of the UFC so that the upper level management, like Dana White, can make decisions to drive profit and popularity. It will allow management to schedule marquee fights, improve advertising, and decide fighter bonus pay. By capturing detailed information about fighters’ performance, event scheduling, customer engagement and employee responsibilities, the database that our group has created will support decision making in several areas. In conclusion, this database will be an invaluable tool for UFC management, enabling data-driven decisions that not only optimize operations but also enhance the fan experience, boost fighter performance, and ultimately drive the organization's success.
@@ -26,6 +26,26 @@ Country can have many Fighters but Fighters can only belong to one Country.
 
 A Country can have many Events but Events can only happen in one Country.
 ## Data Dictionary
+![Table 1](https://github.com/user-attachments/assets/126dfa33-6ca3-4b1c-83f1-9b83c53a694f)
+
+![Table 2](https://github.com/user-attachments/assets/2a429eaa-e27d-4fe1-bfb4-d70eed9ac10d)
+
+![Table 3](https://github.com/user-attachments/assets/849f34e9-734e-4ff4-bb3d-3d29f4bb5a98)
+
+![Table 4](https://github.com/user-attachments/assets/a12f879b-b975-438f-a5c2-17e266b0b1b1)
+
+![Table 5](https://github.com/user-attachments/assets/5fd19713-3b88-4e1c-b070-657635c0b142)
+
+![Table 6](https://github.com/user-attachments/assets/4f993c6c-aa1c-4db7-b4db-a3d61b7918b1)
+
+![Table 7](https://github.com/user-attachments/assets/f9d7376d-82d1-4976-86b3-f2412483460a)
+
+![Table 8](https://github.com/user-attachments/assets/1a544895-9794-4c3b-8fd4-208226921f83)
+
+![Table 9](https://github.com/user-attachments/assets/a767978a-46f1-4fb6-b1b9-aaeeb23bb7ab)
+
+![Table 10](https://github.com/user-attachments/assets/3a11517b-a9c9-4bc7-9a1f-4861a33d108f)
+
 ## Ten Queries
 1. Query 1 is a subquery designed to return the name, ticket type, and ticket price, from customers who paid more than the average price for a ticket. The marketing department can use this complex query to figure out which customers spend more on average. With this, we can send them loyalty program promotions or other enticements to keep them as loyal customers.
 
@@ -47,9 +67,17 @@ A Country can have many Events but Events can only happen in one Country.
 
 ![Screenshot 2024-10-13 at 3 33 30 PM](https://github.com/user-attachments/assets/7116aa86-c85a-4979-9d69-ceac0ddbecc4)
 
-6. query 6 is a query designed to show which contracted fighters have not currently fought at an event. Managers can then use this query to make sure their fighters are active in the UFC.
+6. Query 6 is a query designed to show which contracted fighters have not currently fought at an event. Managers can then use this query to make sure their fighters are active in the UFC.
 
 ![Screenshot 2024-10-13 at 3 39 02 PM](https://github.com/user-attachments/assets/e71aff5f-6748-4ad6-aecc-65f988bfd6c9)
+
+7. Query 7 is a query that returns a fighter's full name, height, and weight class, given that they are from the US and are taller than 70 inches. The social media team for the UFC could make an engaging graphic with this information that targets US viewers.
+
+![Q7](https://github.com/user-attachments/assets/3a2eab72-5255-4828-8aae-c206ad5465a1)
+
+8. Query 8 is a query that sums all the wins of fighters from their country of origin and groups these wins by country. The result is then ordered by the number of wins a country has descending from highest to lowest. Fight planners and advertisers at UFC can use this query and target the countries with the most wins to host more events with fighters from said country.
+
+![image](https://github.com/user-attachments/assets/4a982c36-52a9-4285-9649-3f93237bf136)
 
 
 
