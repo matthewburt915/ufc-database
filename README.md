@@ -79,6 +79,9 @@ A Country can have many Events but Events can only happen in one Country.
 
 ![image](https://github.com/user-attachments/assets/4a982c36-52a9-4285-9649-3f93237bf136)
 
+9. Query 9 is a query that joins the Employees, EmployeesWorkingEvent, and Events entities to find all the employees that worked in Las Vegas and who work in security. Managers can use this query to find specialized employees to work the next event located in Las Vegas. 
+
+![Screenshot 2024-10-13 at 7 48 19 PM](https://github.com/user-attachments/assets/701de781-4f94-435e-aa5f-4749c6bb2228)
 
 
 
