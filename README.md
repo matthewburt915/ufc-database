@@ -2,7 +2,7 @@
 ## Team Name: 
   We're Using Chat
 ## Team Members:
-* Benjamin Brown -
+* Benjamin Brown - https://github.com/bdb12838
 * Matthew Burt 
 * Jared Eidson - 
 * Harrison Mcclure -
@@ -15,3 +15,6 @@ This database models the fighters, events, customers, and employees of the UFC s
 * Events can have many employees and employees can work many events.  Because this was many to many we created a weak entity that joined events and employees which shows us which employees are working which events.
 * Weight classes can have many Fighters but Fighters can only have one Weight Class. Fighters can have many Belts but Belts can only belong to one fighter. Weight Classes belong to one Belt but a Belt can only belong to one Weight Class.
 * Many customers can view  many events and events can have many customers.  Because this is a many to many relationship we created a weak entity that shows which customers are viewing which  event.  
+* Fighters can fight in many Events and Events has many Fighters because this is a many to many relationship it creates the weak entity Event Statistics which contains information about about each fighter for that event. 
+* Country can have many Fighters but Fighters can only belong to one Country.
+* A Country can have many Events but Events can only happen in one Country.
