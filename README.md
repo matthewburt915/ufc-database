@@ -63,15 +63,15 @@ A Country can have many Events but Events can only happen in one Country.
 
 ![Screenshot 2024-10-13 at 3 27 51 PM](https://github.com/user-attachments/assets/24341e5e-92c1-4bf2-8cd0-c4f2141c3a21)
 
-5. Query 5 is a subquery that returns the city, venue, and viewership from the event in the database which had the hightest viewership. This query can be useful to managers by showing the venue that resulted in the most viewers, so they can plan on scheduling another event there.
+5. Query 5 is a subquery that returns the city, venue, and viewership from the event in the database which had the hightest viewership. This query can be useful to managers by showing the venue that resulted in the most viewers, so they can plan on scheduling another event there. This can also be used to see where the UFC may want to put more effort in building hyp earound the smaller venues not shown in the list. 
 
 ![Screenshot 2024-10-13 at 3 33 30 PM](https://github.com/user-attachments/assets/7116aa86-c85a-4979-9d69-ceac0ddbecc4)
 
-6. Query 6 is a query designed to show which contracted fighters have not currently fought at an event. Managers can then use this query to make sure their fighters are active in the UFC.
+6. Query 6 is a query designed to show which contracted fighters have not currently fought at an event. Managers can then use this query to make sure their fighters are active in the UFC. This can also help the UFC to see which fighters are maybe looking for a fight or mainly who to schedule that the public may have not seen fight yet. This will help bring more publicity to newer fighters and large events. 
 
 ![Screenshot 2024-10-13 at 3 39 02 PM](https://github.com/user-attachments/assets/e71aff5f-6748-4ad6-aecc-65f988bfd6c9)
 
-7. Query 7 is a query that returns a fighter's full name, height, and weight class, given that they are from the US and are taller than 70 inches. The social media team for the UFC could make an engaging graphic with this information that targets US viewers.
+7. Query 7 is a query that returns a fighter's full name, height, and weight class, given that they are from the US and are taller than 70 inches. The social media team for the UFC could make an engaging graphic with this information that targets US viewers. 
 
 ![Q7](https://github.com/user-attachments/assets/3a2eab72-5255-4828-8aae-c206ad5465a1)
 
