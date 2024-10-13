@@ -13,4 +13,5 @@ This database models the fighters, events, customers, and employees of the UFC s
 ![Final_Project_Data_Model](https://github.com/user-attachments/assets/58cd714d-ee79-43a2-b7b0-e2c4348b4851)
 * The two main entities in our model are the Events and Fighters entities with the rest of of the model revolving around them in some way or another. Fighters contains information about the atheletes who are contracted by the UFC while Events has data on where the fights take place and how they are viewed. 
 * Events can have many employees and employees can work many events.  Because this was many to many we created a weak entity that joined events and employees which shows us which employees are working which events.
-
+* Weight classes can have many Fighters but Fighters can only have one Weight Class. Fighters can have many Belts but Belts can only belong to one fighter. Weight Classes belong to one Belt but a Belt can only belong to one Weight Class.
+* Many customers can view  many events and events can have many customers.  Because this is a many to many relationship we created a weak entity that shows which customers are viewing which  event.  
