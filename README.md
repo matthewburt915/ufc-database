@@ -83,6 +83,9 @@ A Country can have many Events but Events can only happen in one Country.
 
 ![Screenshot 2024-10-13 at 7 48 19 PM](https://github.com/user-attachments/assets/701de781-4f94-435e-aa5f-4749c6bb2228)
 
+10. Query 10 is a simple query that list all the venues along with their attendances then ordering the results by the highest attendance to the lowest attendance. Upper level management at the UFC will find this list useful as higher attendance equates to more ticket sales which translates to higher revenue.
+
+![Screenshot 2024-10-13 at 8 06 59 PM](https://github.com/user-attachments/assets/92d668da-7120-4f42-ae40-84f83241a70b)
 
 
 
