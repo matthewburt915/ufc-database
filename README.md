@@ -89,3 +89,5 @@ A Country can have many Events but Events can only happen in one Country.
 ## Database Information 
 ![Screenshot 2024-10-13 at 8 19 02 PM](https://github.com/user-attachments/assets/37375783-fa85-4c46-8ded-5f6559ff340e)
 
+Name of the database: cs_meb61924
+
