@@ -12,19 +12,15 @@ This database models the fighters, events, customers, and employees of the UFC s
 ## Data Model
 ![Final_Project_Data_Model](https://github.com/user-attachments/assets/707d361c-da7d-4d36-8a17-c5bbf0654716)
 
-The two main entities in our model are the Events and Fighters entities with the rest of of the model revolving around them in some way or another. Fighters contains information about the atheletes who are contracted by the UFC while Events has data on where the fights take place and how they are viewed. 
+The two main entities in our model are the Events and Fighters entities with the rest of of the model revolving around them in some way or another. Fighters contains information about the atheletes who are contracted by the UFC while Events has data on where the fights take place and how they are viewed. Fighters can fight in many Events and Events have many Fighters. Since this is a many to many relationship we created a weak entity Event Statistics which contains information about a fighter at an event. This entity also holds attributes like payment and fight statistics that are vary depending on the fighter and event.
 
-Events can have many employees and employees can work many events.  Because this was many to many we created a weak entity that joined events and employees which shows us which employees are working which events.
+Another entity that relates to both Fighters and Events is Country which has a one to many relationship with both entities. A country can have many fighters but a fighter can only be from one Country. Along the same lines, a country can host many events but a given event can only happen in one Country. Country stores a country's code (USA), which is the primary key, and a country's name (Canada).
 
-Weight classes can have many Fighters but Fighters can only have one Weight Class. Fighters can have many Belts but Belts can only belong to one fighter. Weight Classes belong to one Belt but a Belt can only belong to one Weight Class.
+Two entities that have relationships with Fighters is WeightClasses and Belts. WeightClasses stores data on the name of the weightclass and the maximum weight at which fighters can compete at said weightclass. It has a one to many relationship with Fighters as a weightclass has many fighters competing in it but a fighter can only belong to one weightclass at a given time. Belts contains information on the current champions of each weightclass and when they won their belts. Belts has a one to many relationship with Fighters because a Fighter can have multiple belts (if they won the belt of one weightclass and then changed weightclasses and won another one) but a belt can only be held by one fighter. Belts and WeightClasses has a one to one relationship as each weightclass has one belt and each belt belongs to one weightclass.
 
-Many customers can view  many events and events can have many customers.  Because this is a many to many relationship we created a weak entity that shows which customers are viewing which  event.
+Another entity in our data model is Employees which stores information on the people who work for the UFC. This data includes their full name, job title, the date they were hired, and the ID of their boss. Employees has a many to many relationship with Events as an event can be worked by many employees and an employee can work many events. Since this is a many to many relationship we created a weak entity called EmployeesWorkingEvent. This new entity shows us which employees are working which events. Employees also has a one to many recursive relationship which is where a boss (who is stored in Employees) has many workers reporting to them but a worker only reports to one boss.
 
-Fighters can fight in many Events and Events has many Fighters because this is a many to many relationship it creates the weak entity Event Statistics which contains information about about each fighter for that event.
-
-Country can have many Fighters but Fighters can only belong to one Country.
-
-A Country can have many Events but Events can only happen in one Country.
+Customers is the last entity in our model and it contains the names, emails, and ages of people who purchase tickets to a UFC event. Customers has a many to many relationship with Events as an event is viewed by many customers and a customer can view many events. Because this is a many to many relationship we created a weak entity that shows which customers are viewing which event, called CustomersViewingEvent. This entity also stores data on the ticket price and the ticket type (PayPerView or inPerson).
 ## Data Dictionary
 ![Table 1](https://github.com/user-attachments/assets/126dfa33-6ca3-4b1c-83f1-9b83c53a694f)
 
@@ -91,3 +87,4 @@ A Country can have many Events but Events can only happen in one Country.
 
 Name of the database: cs_meb61924
 
+Additional information: Each query listed above is marked in the database using stored procedures which can be called using the following format: CALL TP_Q1();
